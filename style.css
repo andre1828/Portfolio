@@ -1,85 +1,157 @@
-/*html, body{
-    width: 100%;
-    height: 100%;
-}*/
+@media (max-device-width: 767px)
+{
+    div#sidemenu {
+        flex: 1;
+    }
+                    /*PROFILE PIC AREA*/
+    div#sidemenu #profile-pic img {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 5px;
+        width: 75%;
+        border-radius: 50%;
+    }
+
+    div#sidemenu #profile-pic h1 {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 5px;
+        width: 100%;
+        font-weight: bold; 
+        font-size: 5.3em;
+    }
+
+    div#sidemenu #profile-pic p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 5px;
+        font-size: 3em;
+    }
+
+                    /*ABOUT ME AREA*/
+    div#sidemenu div#aboutme{
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+        width: 50%;
+    }
+
+    div#sidemenu div#aboutme h1 {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 5px;
+        width: 55%;
+        font-size: 2.3em;
+        text-decoration: underline; 
+    }
+
+    div#sidemenu div#aboutme p {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 5px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+                    /*CONTACTS AREA*/
+
+
+    div#sidemenu div#contacts {
+        display: block;
+        margin: auto;
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    div#sidemenu div#contacts h1 {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 5px;
+        width: 50%;
+        font-size: 2.3em;
+        text-decoration: underline; 
+    }
+
+    div#sidemenu div#contacts li {   
+        font-size: 2em;
+    }
+
+                    /*==== CONTENT ====*/
+    section.content .title {
+        display: flex;
+        justify-content: center;
+    }
+    
+    section.content .title h1 {
+        display: inline-block;
+        justify-content: center;
+        font-size: 3.5em;
+    }
+
+    section.content .title i {
+        display: inline-block;
+        justify-content: center;
+        margin-top: 45px;
+        margin-right: 11px;
+        font-size: 4em;
+    }
+
+    section.content ul {
+        margin-left: 15px;
+    }
+
+    section.content li {
+        color: #343434;
+        font-size: 2.5em;
+        list-style-type: none;
+    }
+}
+
+@media (min-device-width: 768px) {
+    div#sidemenu {
+        height: 100%;
+        width: 25%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+    }
+}
+
 body {
     font-size: 100%;
 }
+
+.flex-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.col {
+    flex: 1;
+}
+
 div#sidemenu{
     color: #DFDFDF;
     background-color: #01334c;
-    height: 100%;
-    width: 25%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    overflow-x: hidden;
     font-family: Calibri, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-div#sidemenu #profile-pic img {
-    display: block;
-    margin: auto;
-    margin-top: 5px;
-    width: 30%;
-    border-radius: 50%;
-}
 
-div#sidemenu #profile-pic h1{
-    display: block;
-    margin: auto;
-    margin-top: 5px;
-    width: 41%;
-    font-weight: bold; 
-    font-size: 1.3em;
-}
 
-div#sidemenu #profile-pic span{
-    display: block;
-    margin: auto;
-    margin-top: 5px;
-    width: 34%;
-}
 
-div#sidemenu div#aboutme{
-    display: block;
-    margin: auto;
-    margin-top: 100px;
-    width: 50%;
-}
 
-div#sidemenu div#aboutme h1{
-    display: block;
-    margin: auto;
-    margin-top: 5px;
-    width: 55%;
-    font-size: 1.3em;
-    text-decoration: underline; 
-}
-
-div#sidemenu div#aboutme p{
-    font-size: 1.1em;
-}
-
-div#sidemenu div#contacts{
-    display: block;
-    margin: auto;
-    width: 50%;
-    margin-top: 50px;
-}
-
-div#sidemenu div#contacts h1{
-    display: block;
-    margin: auto;
-    margin-top: 5px;
-    width: 50%;
-    font-size: 1.3em;
-    text-decoration: underline; 
-}
+/* SECOND DIV - CONTENT*/
 
 section.content {
-    position: fixed;
-    margin-left: 500px;
     font-family: Calibri, sans-serif;
 }
 
